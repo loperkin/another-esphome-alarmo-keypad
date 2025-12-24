@@ -6,6 +6,7 @@ I wanted a keypad hardware that would display the alarm status and pin code entr
 I like to follow the kiss method (kids look it up) and did not want tags or fingerprint sensors. Just want pin code entry with a dedicated controller.
 
 Supplies
+
   *esp32-c3 supermini → [Amazon](https://www.amazon.com/Teyleten-Robot-Development-Supermini-Bluetooth/dp/B0D47G24W3)
 
       This keypad is ok. The membrane versions might be better. The soldering pads on this Tegg keypad can break off if not careful  
