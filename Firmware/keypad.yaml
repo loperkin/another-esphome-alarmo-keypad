@@ -10,6 +10,7 @@ wifi:
   password: !secret wifi_password
   # This output power actually lowers the signal strength but apparently slightly lowing it makes it more stable. maybe?
   output_power: 17dB
+ 
   # some variables to use with the display and key collector
 globals:
   - id: pin_string
