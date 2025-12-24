@@ -18,6 +18,6 @@ Supplies
     Any wiring accessories you may want like a bread board, wire, project box(wood craft boxes are fun), and connectors.
 
 Wiring
-   
-      <img width="722" height="581" alt="WiringDiagram" src="https://github.com/user-attachments/assets/656b9c79-36ce-496a-a643-c632ac5dad08" />
+   <img width="722" height="581" alt="WiringDiagram" src="https://github.com/user-attachments/assets/464e2e21-b95c-48a0-b6ee-26008b92c803" />
+
 
