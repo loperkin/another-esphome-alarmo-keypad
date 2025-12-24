@@ -15,4 +15,7 @@ Supplies
   * ssd1306 128x64 display → [Amazon](https://www.amazon.com/SSD1306/s?k=SSD1306)
   * buzzer not high decibels → [Amazon](https://www.amazon.com/dp/B0CWHH9ZYB)
     OPTIONALS
-    Any wiring accessories you may want like a bread board, wire, project box(wood craft boxes are fun), and connectors. 
+    Any wiring accessories you may want like a bread board, wire, project box(wood craft boxes are fun), and connectors.
+
+Wiring
+
