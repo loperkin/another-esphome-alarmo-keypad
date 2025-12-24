@@ -1,0 +1,117 @@
+alias: Keypad Code Entered
+description: "This handles the keypad code event"
+triggers:
+  - trigger: event
+    event_type: esphome.keypad_code_entered
+conditions: []
+#this has multiple actions based on conditions
+actions:
+  - choose:
+      # first condition if the distress code is entered. I use down the middle 2580. Simple for people to remember
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.event.data.code == '2580' }}"
+        sequence:
+            #disarm the system like normal
+          - device_id: 
+            domain: alarm_control_panel
+            entity_id: 
+            type: disarm
+            code: "Your Pin Code to disarm"
+            #but also notify someone. If you have the noonlight integration you could alert them silently. if you have some other alert system use that here. 
+          - action: notify.mobile_app_iphone_449
+            metadata: {}
+            data:
+              message: Call the po po Ho! The distress code was entered!
+          - action: notify.mobile_app_lees_iphone
+            metadata: {}
+            data:
+              message: Call the po po Ho! The distress code was entered!
+      #if not the distress code
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.event.data.code != '2580' }}"
+        sequence:
+            #if armed away. You can remove this condidtion but i did not want my kids playing and punching codes all day. 
+          - if:
+              - condition: device
+                device_id: 
+                domain: alarm_control_panel
+                entity_id: 
+                type: is_armed_away
+            then:
+              #this is the passing of the code entered to alarmo
+              - action: alarmo.disarm
+                data:
+                  entity_id: alarm_control_panel.alarmo
+                  code: "{{trigger.event.data.code}}"
+              - delay:
+                  hours: 0
+                  minutes: 0
+                  seconds: 2
+                  milliseconds: 0
+              #I delay and then check if the alarmo is disarmed. if not I make the buzzer go off. this part might be best to recreate in the gui
+              - if:
+                  - condition: device
+                    device_id: 
+                    domain: alarm_control_panel
+                    entity_id: 
+                    type: is_armed_away
+                then:
+                  - type: turn_on
+                    device_id: 
+                    entity_id: 
+                    domain: switch
+                  - delay:
+                      hours: 0
+                      minutes: 0
+                      seconds: 0
+                      milliseconds: 200
+                  - type: turn_off
+                    device_id: 
+                    entity_id: 
+                    domain: switch
+                  - delay:
+                      hours: 0
+                      minutes: 0
+                      seconds: 0
+                      milliseconds: 100
+                  - type: turn_on
+                    device_id: 
+                    entity_id: 
+                    domain: switch
+                  - delay:
+                      hours: 0
+                      minutes: 0
+                      seconds: 0
+                      milliseconds: 200
+                  - type: turn_off
+                    device_id: 
+                    entity_id: 
+                    domain: switch
+            else:
+              # if my kids are playing and the house is not armed they get a message over the google speaker that the house is already disarmed. 
+              - target:
+                  entity_id: media_player.nestmini0856
+                data:
+                  media:
+                    media_content_id: >-
+                      media-source://tts/tts.piper?message=Alarm+is+already+disarmed%0A%0A&language=en_GB&voice=en_GB-semaine-medium
+                    media_content_type: audio/mp3
+                    metadata:
+                      title: |+
+                        Alarm is already disarmed
+
+                      thumbnail: https://brands.home-assistant.io/_/wyoming/logo.png
+                      media_class: app
+                      children_media_class: null
+                      navigateIds:
+                        - {}
+                        - media_content_type: app
+                          media_content_id: media-source://tts
+                        - media_content_type: audio/mp3
+                          media_content_id: >-
+                            media-source://tts/tts.piper?message=Alarm+is+already+disarmed%0A%0A&language=en_GB&voice=en_GB-semaine-medium
+                      browse_entity_id: media_player.nestmini0856
+                action: media_player.play_media
+mode: single
