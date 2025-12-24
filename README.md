@@ -26,12 +26,12 @@ Wiring
 
 Programing
 
-  The esphome builder code is in the firmware folder. Please have a look and read. You must copy the components of the code you want. 
+  The esphome builder code is in the firmware folder. Please have a look and read. You must copy the components of the code you want into your own esphome builder device. 
 
-  If you have a new C3 supermini it probably defaults to sleep and awake over and over. You need to press and hold boot, then press reset and release, then release boot buttons. This method will allow the C3 supermini to program via usb.  
+  If you have a new C3 supermini it probably defaults to sleep and awake, over and over. You need to press and hold boot, then press reset and release, then release boot buttons. This method will allow the C3 supermini to program via usb.  
 
-  Check out the Automation Examples. The Key entered example will be needed to pass the code to alarmo. My examples have device ID's removed. You will need to update with your device and entity id's. The gui will be the best way to do that. just note that {trigger.event.data.code} is the way to utilize the entered code. 
+  Check out the Automation Examples. The key entered example will be needed to pass the code to alarmo. My examples have device ID's removed. You will need to update with your device and entity id's. The gui will be the best way to do that. Just note that {trigger.event.data.code} is the way to utilize the entered code. 
 
 Usage
 
-  The star key will delete a key entered. The C will clear the currently entered pin code. If you use the A key automation, pressing and holding the A key will arm the system. And finally if you enter your pin code and press D it still disarm Alarmo system. 
+  The * key will delete a pin character entered. The C will clear the currently entered pin code. If you use the A key automation, pressing and holding the A key will arm the system. And finally if you enter your pin code and press D it still disarm Alarmo system. 
