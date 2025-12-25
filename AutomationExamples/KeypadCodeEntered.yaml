@@ -32,13 +32,27 @@ actions:
           - condition: template
             value_template: "{{ trigger.event.data.code != '2580' }}"
         sequence:
-            #if armed away. You can remove this condidtion but i did not want my kids playing and punching codes all day. 
+            #if armed away, pending, or Arming. You can remove this condidtion but i did not want my kids playing and punching codes all day. 
           - if:
-              - condition: device
-                device_id: 
-                domain: alarm_control_panel
-                entity_id: 
-                type: is_armed_away
+              - condition: or
+                conditions:
+                  - condition: device
+                    device_id: 
+                    domain: alarm_control_panel
+                    entity_id: 
+                    type: is_armed_away
+                  - condition: state
+                    entity_id: sensor.keypad_display_status
+                    state:
+                      - Arming
+                  - condition: state
+                    entity_id: sensor.keypad_display_status
+                    state:
+                      - Pending
+                  - condition: state
+                    entity_id: sensor.keypad_display_status
+                    state:
+                      - Armed Away
             then:
               #this is the passing of the code entered to alarmo
               - action: alarmo.disarm
