@@ -9,10 +9,10 @@ Supplies
 
   *esp32-c3 supermini → [Amazon](https://www.amazon.com/Teyleten-Robot-Development-Supermini-Bluetooth/dp/B0D47G24W3)
 
-      This keypad is ok. The membrane versions might be better. The soldering pads on this Tegg keypad can break off if not careful  
+This keypad is ok. The membrane versions might be better. The soldering pads on this Tegg keypad can break off if not careful  
   *4x4 matrix keypad  → [Amazon](https://www.amazon.com/Tegg-Keypad-Matrix-Tactile-Arduino/dp/B07QBNT56V)
 
-      You can get any ssd1306 display in the color you want white or blue or whatever
+You can get any ssd1306 display in the color you want white or blue or whatever
   * ssd1306 128x64 display → [Amazon](https://www.amazon.com/SSD1306/s?k=SSD1306)
   * buzzer not high decibels → [Amazon](https://www.amazon.com/dp/B0CWHH9ZYB)
 
@@ -35,3 +35,11 @@ Programing
 Usage
 
   The * key will delete a pin character entered. The C will clear the currently entered pin code. If you use the A key automation, pressing and holding the A key will arm the system. And finally if you enter your pin code and press D it still disarm Alarmo system. 
+
+Project Example
+
+<img width="320" height="224" alt="IMG_3555" src="https://github.com/user-attachments/assets/e1f1ee0b-10a0-4f80-8b6c-57bc8143987d" />
+
+<img width="291" height="320" alt="IMG_3556" src="https://github.com/user-attachments/assets/158d2382-7808-4d67-bcd2-235490e1511f" />
+
+
