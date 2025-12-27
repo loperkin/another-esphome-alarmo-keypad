@@ -13,10 +13,10 @@ This keypad is ok. The membrane versions might be better. The soldering pads on 
   *4x4 matrix keypad  → [Amazon](https://amzn.to/496OdZm)
 
 You can get any ssd1306 display in the color you want white or blue or whatever
-  * ssd1306 128x64 display → [Amazon - White](https://amzn.to/4jiPOQD) [Amazon - blue](https://amzn.to/491VTfe) [Amazon - yellow and blue](https://amzn.to/4aS9oRB)
+  * ssd1306 128x64 display → [Amazon - White](https://amzn.to/4jiPOQD) , [Amazon - blue](https://amzn.to/491VTfe) , [Amazon - yellow and blue](https://amzn.to/4aS9oRB)
   * buzzer not high decibels → [Amazon](https://amzn.to/4qw0NbN)
 
-I do get a small commision for these links
+I do get a small commision for these links but I personaly did purchase these for this project. 
 
     OPTIONALS
 
