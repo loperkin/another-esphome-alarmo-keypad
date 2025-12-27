@@ -7,14 +7,16 @@ I like to follow the kiss method (kids look it up) and did not want tags or fing
 
 Supplies
 
-  *esp32-c3 supermini → [Amazon](https://www.amazon.com/Teyleten-Robot-Development-Supermini-Bluetooth/dp/B0D47G24W3)
+  *esp32-c3 supermini → [Amazon](https://amzn.to/4qy8IoZ)  bigger pack [Amazon](https://amzn.to/4jgqCdq) 
 
 This keypad is ok. The membrane versions might be better. The soldering pads on this Tegg keypad can break off if not careful  
-  *4x4 matrix keypad  → [Amazon](https://www.amazon.com/Tegg-Keypad-Matrix-Tactile-Arduino/dp/B07QBNT56V)
+  *4x4 matrix keypad  → [Amazon](https://amzn.to/496OdZm)
 
 You can get any ssd1306 display in the color you want white or blue or whatever
-  * ssd1306 128x64 display → [Amazon](https://www.amazon.com/SSD1306/s?k=SSD1306)
-  * buzzer not high decibels → [Amazon](https://www.amazon.com/dp/B0CWHH9ZYB)
+  * ssd1306 128x64 display → [Amazon - White](https://amzn.to/4jiPOQD) [Amazon - blue](https://amzn.to/491VTfe) [Amazon - yellow and blue](https://amzn.to/4aS9oRB)
+  * buzzer not high decibels → [Amazon](https://amzn.to/4qw0NbN)
+
+I do get a small commision for these links
 
     OPTIONALS
 
