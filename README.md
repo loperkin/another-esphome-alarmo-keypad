@@ -18,9 +18,10 @@ You can get any ssd1306 display in the color you want white or blue or whatever
 
 I do get a small commision for these links but I personaly did purchase these for this project. 
 
-    OPTIONALS
+OPTIONALS:
 
-      Any wiring accessories you may want like a bread board, wire, project box(wood craft boxes are fun), and connectors.
+Any wiring accessories you may want like a [breadboard](https://amzn.to/4beOWds), [wire](https://amzn.to/4p9BBXd), [project box(wood craft boxes are fun)](https://amzn.to/49zvOor), [connectors](https://amzn.to/4peqV9V), [usb-c cords](https://amzn.to/4b9XnGZ) and [powerbricks](https://amzn.to/4ph2mJs).
+      
 
 Wiring
 
