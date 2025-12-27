@@ -7,10 +7,10 @@ I like to follow the kiss method (kids look it up) and did not want tags or fing
 
 Supplies
 
-  *esp32-c3 supermini → [Amazon](https://amzn.to/4qy8IoZ)  bigger pack [Amazon](https://amzn.to/4jgqCdq) 
+  * esp32-c3 supermini → [Amazon](https://amzn.to/4qy8IoZ)  bigger pack [Amazon](https://amzn.to/4jgqCdq) 
 
 This keypad is ok. The membrane versions might be better. The soldering pads on this Tegg keypad can break off if not careful  
-  *4x4 matrix keypad  → [Amazon](https://amzn.to/496OdZm)
+  * 4x4 matrix keypad  → [Amazon](https://amzn.to/496OdZm)
 
 You can get any ssd1306 display in the color you want white or blue or whatever
   * ssd1306 128x64 display → [Amazon - white](https://amzn.to/4jiPOQD) , [Amazon - blue](https://amzn.to/491VTfe) , [Amazon - yellow and blue](https://amzn.to/4aS9oRB)
