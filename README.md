@@ -7,24 +7,24 @@ I like to follow the kiss method (kids look it up) and did not want tags or fing
 
 Supplies
 
-  * esp32-c3 supermini → [Amazon](https://amzn.to/4qy8IoZ)  bigger pack [Amazon](https://amzn.to/4jgqCdq) 
+  * esp32-c3 supermini → [Amazon](https://amzn.to/4htXbUB)  bigger pack [Amazon](https://amzn.to/3T9Ncfi) 
 
 This keypad is ok. The membrane versions might be better. The soldering pads on this Tegg keypad can break off if not careful. Working on a PCB that should make this a non issue. 
-  * 4x4 matrix keypad  → [Amazon](https://amzn.to/496OdZm)
+  * 4x4 matrix keypad  → [Amazon](https://amzn.to/4ACFlri)
 
 You can get any ssd1306 display in the color you want white or blue or whatever
-  * ssd1306 128x64 display → [Amazon - white](https://amzn.to/4jiPOQD) , [Amazon - blue](https://amzn.to/491VTfe) , [Amazon - yellow and blue](https://amzn.to/4aS9oRB)
-  * buzzer not high decibels → [Amazon](https://amzn.to/4qw0NbN)
+  * ssd1306 128x64 display → [Amazon - yellow and blue](https://amzn.to/4z5Livp)
+  * buzzer not high decibels → active [Amazon](https://amzn.to/4xStWB8) or passive for PCB [Amazon](https://amzn.to/3TAuAVQ)
 
 I do get a small commision for these links but I personaly did purchase these for this project. 
 
 OPTIONALS:
 
-Any wiring accessories you may want like a [breadboard](https://amzn.to/4beOWds), [wire](https://amzn.to/4p9BBXd), [jumper wire kit](https://amzn.to/3KTa0Ma) ,  [project box(wood craft boxes are fun)](https://amzn.to/49zvOor), [connectors](https://amzn.to/4peqV9V), [usb-c cords](https://amzn.to/4b9XnGZ) and [powerbricks](https://amzn.to/4ph2mJs).
+Any wiring accessories you may want like a [breadboard](https://amzn.to/3VeKENz), [wire](https://amzn.to/4ACFvPq), [jumper wire kit](https://amzn.to/3VkdOea) ,  [project box(wood craft boxes are fun)](https://amzn.to/4dfnnBf), [connectors](https://amzn.to/4AGSwr6), [usb-c cords](https://amzn.to/4xXHJGL) and [powerbricks](https://amzn.to/3TgWXbA).
 
 Tools:
 
-[Soldering station](https://amzn.to/3YbfWDh), [solder flux](https://amzn.to/4sbSXpr), [wire strippers](https://amzn.to/4q7xsnW)
+[Soldering station](https://amzn.to/4hwRKEj), [solder flux](https://amzn.to/4hAHv27), [wire strippers](https://amzn.to/47r0Y0f)
       
 
 Wiring
