@@ -1,4 +1,8 @@
 # another-esphome-alarmo-keypad
+
+Scroll down for new updated PCB and 3d Printable case! <img width="766" height="530" alt="IMG_5698" src="https://github.com/user-attachments/assets/edaf75ed-bf33-46c9-adbf-09f2237deee3" />
+
+
 A local wifi keypad for Alarmo
 
 I wanted a keypad hardware that would display the alarm status and pin code entry for Alarmo. I have android tablet but it flakes out when my internet goes out. I wanted to have a more solid option for disarming the house if the tablet flaked out while we were out of the house. 
