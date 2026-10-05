@@ -72,7 +72,7 @@ The PCB brings the ESP32-C3 Super Mini, SSD1306 OLED display, 4x4 keypad, and bu
 </p>
 
 
-The PCB files can be found in the PCB folder of this repository. or [availabe here]([https://amzn.to/47r0Y0f](https://oshwlab.com/rockdown/another-esphome-alarmo-keypad))  
+The PCB files can be found in the PCB folder of this repository. or [availabe here]([https://amzn.to/47r0Y0f](https://oshwlab.com/rockdown/another-esphome-alarmo-keypad)  
 3D Printed Case
 
 I also designed a case to hold the complete keypad assembly. The goal was to make something that could be mounted on the wall and look more like a finished alarm keypad instead of a collection of development boards and wires stuffed into a project box.
