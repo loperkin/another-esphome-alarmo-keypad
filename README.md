@@ -141,6 +141,7 @@ The default configuration uses several of the keypad's function keys:
 | `*` | Delete the last PIN digit entered |
 | `C` | Clear the currently entered PIN |
 | `A` | Press and hold to arm the alarm when using the example automation |
+| `B` | Press and hold to arm Alarmo in **Night Mode** |
 | `D` | Submit the entered PIN and disarm Alarmo |
 
 Because the keypad events are exposed through ESPHome and Home Assistant, these controls can be modified to fit your own alarm setup.
