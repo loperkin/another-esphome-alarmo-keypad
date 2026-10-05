@@ -56,6 +56,35 @@ Project Example
 
 https://github.com/user-attachments/assets/e2140639-2b51-4e83-94c9-4a3a91e51b54
 
+Updated PCB & 3D Printed Case!
+
+The original version of this project was built using point-to-point wiring and a project box. It worked, but I wanted something cleaner, easier to assemble, and a little less janky.
+
+So I designed a custom PCB and a 3D printable enclosure specifically for the Alarmo keypad.
+
+Custom PCB 
+
+The PCB brings the ESP32-C3 Super Mini, SSD1306 OLED display, 4x4 keypad, and buzzer together into a much cleaner package. It greatly reduces the amount of hand wiring required and makes the finished keypad easier to assemble and service.
+
+<p align="center">
+  <img width="45%" alt="PCB front" src="https://github.com/user-attachments/assets/a1162d3e-8dd0-4ddc-a72c-8e80d1786fd6" />
+  <img width="45%" alt="PCB back" src="https://github.com/user-attachments/assets/f778a3d6-73c8-4dc4-976d-43beef11bbca" />
+</p>
+
+
+The PCB files can be found in the PCB folder of this repository.
+
+3D Printed Case
+
+I also designed a case to hold the complete keypad assembly. The goal was to make something that could be mounted on the wall and look more like a finished alarm keypad instead of a collection of development boards and wires stuffed into a project box.
+
+
+
+The printable files can be found in the 3D Print folder of this repository.
+
+Finished Keypad
+
+With the PCB and printed enclosure, the project is now much easier to reproduce and gives the Alarmo keypad a much more finished appearance.
 
 
 
