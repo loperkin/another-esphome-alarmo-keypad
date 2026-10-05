@@ -1,0 +1,38 @@
+alias: Keypad Arm Night
+description: ''
+triggers:
+  - type: turned_on
+    device_id: ff45b809679f7bca3ba13f54b1744c96
+    entity_id: 9fb14336628b31e7a5eade67fcfe9377
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+  - type: turned_on
+    device_id: 75c2bd686c719c39b3782ad2266878be
+    entity_id: dc65d34b79bacace51ed2463e4e07a78
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+  - type: turned_on
+    device_id: 678757b5eb4879b9c99a5573badcc997
+    entity_id: 192ee8868607f232abfd22fd23957017
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+conditions: []
+actions:
+  - action: alarmo.arm
+    metadata: {}
+    data:
+      mode: night
+      entity_id: alarm_control_panel.alarmo
+mode: single
