@@ -78,13 +78,21 @@ The PCB files can be found in the PCB folder of this repository.
 
 I also designed a case to hold the complete keypad assembly. The goal was to make something that could be mounted on the wall and look more like a finished alarm keypad instead of a collection of development boards and wires stuffed into a project box.
 
-
+<p align="center">
+  <img width="45%" alt="3D printed case front" src="https://github.com/user-attachments/assets/ea5c2dcf-ef01-4767-9f10-308f13c043ae" />
+  <img width="45%" alt="3D printed case back" src="https://github.com/user-attachments/assets/9813a219-db86-4038-8ed1-7ca5638dacb2" />
+</p>
 
 The printable files can be found in the 3D Print folder of this repository.
 
 Finished Keypad
 
 With the PCB and printed enclosure, the project is now much easier to reproduce and gives the Alarmo keypad a much more finished appearance.
+
+<p align="center">
+  <img width="500" alt="Completed Alarmo Keypad" src="https://github.com/user-attachments/assets/b1be64ae-bc8f-450d-bf97-a4670e824924" />
+</p>
+
 
 
 
