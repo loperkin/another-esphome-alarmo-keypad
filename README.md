@@ -235,6 +235,18 @@ This project is actively being improved. Firmware changes, PCB revisions, enclos
 
 If you build one, modify the design, or find a better way to do something, feel free to share your version.
 
+## 📜 License
+
+This project is open source, with licensing based on the type of material:
+
+- **Software, ESPHome configurations, Home Assistant automations and code:** MIT License
+- **PCB designs, mechanical designs and functional 3D-printable parts:** CERN-OHL-W-2.0
+- **Documentation, photos and Purpose in Practice branding:** Copyright © 2026 Lee Perkins unless otherwise noted
+
+See [LICENSE.md](LICENSE.md) for complete licensing information.
+
+You're welcome to learn from it, build it, modify it, and improve it.
+
 **Learn it. Build it. Put it into practice.**
 
 
