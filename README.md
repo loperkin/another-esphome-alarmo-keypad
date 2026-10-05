@@ -1,6 +1,6 @@
 # another-esphome-alarmo-keypad
 
-Scroll down for new updated PCB and 3d Printable case! <img width="766" height="530" alt="IMG_5698" src="https://github.com/user-attachments/assets/edaf75ed-bf33-46c9-adbf-09f2237deee3" />
+Scroll down for new updated PCB and 3d Printable case! <img width="100" height="75" alt="IMG_5698" src="https://github.com/user-attachments/assets/edaf75ed-bf33-46c9-adbf-09f2237deee3" />
 
 
 A local wifi keypad for Alarmo
