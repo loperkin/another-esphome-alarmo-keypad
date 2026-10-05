@@ -1,97 +1,240 @@
-# another-esphome-alarmo-keypad
+# Another ESPHome Alarmo Keypad
 
-Scroll down for new updated PCB and 3d Printable case! <img width="100" height="75" alt="IMG_5698" src="https://github.com/user-attachments/assets/edaf75ed-bf33-46c9-adbf-09f2237deee3" />
+A dedicated, local Wi-Fi alarm keypad built with **ESPHome** for **Home Assistant and Alarmo**.
 
+This project provides a physical keypad for entering a PIN, arming or disarming Alarmo, and displaying the current alarm status without relying on a tablet or touchscreen.
 
-A local wifi keypad for Alarmo
+<p align="center">
+  <img width="500" alt="Completed ESPHome Alarmo Keypad" src="https://github.com/user-attachments/assets/b1be64ae-bc8f-450d-bf97-a4670e824924" />
+</p>
 
-I wanted a keypad hardware that would display the alarm status and pin code entry for Alarmo. I have android tablet but it flakes out when my internet goes out. I wanted to have a more solid option for disarming the house if the tablet flaked out while we were out of the house. 
+## Why I Built It
 
-I like to follow the kiss method (kids look it up) and did not want tags or fingerprint sensors. Just want pin code entry with a dedicated controller.
+I already had an Android tablet that could control Alarmo, but I wanted a more reliable, dedicated way to disarm the house.
 
-Supplies
+A tablet is great when everything is working properly, but tablets, apps, Wi-Fi connections, and dashboards can occasionally flake out. I wanted something simpler that could stay on the wall and have one primary job:
 
-  * esp32-c3 supermini → [Amazon](https://amzn.to/4htXbUB)  bigger pack [Amazon](https://amzn.to/3T9Ncfi) 
+**Enter a PIN and control the alarm.**
 
-This keypad is ok. The membrane versions might be better. The soldering pads on this Tegg keypad can break off if not careful. Working on a PCB that should make this a non issue. 
-  * 4x4 matrix keypad  → [Amazon](https://amzn.to/4ACFlri)
+I tend to follow the **KISS principle — Keep It Simple, Stupid.**
 
-You can get any ssd1306 display in the color you want white or blue or whatever
-  * ssd1306 128x64 display → [Amazon - yellow and blue](https://amzn.to/4z5Livp)
-  * buzzer not high decibels → active [Amazon](https://amzn.to/4xStWB8) or passive for PCB [Amazon](https://amzn.to/3TAuAVQ)
+I didn't need fingerprint readers, RFID tags, cameras, or anything particularly fancy. I wanted a physical keypad, a small display, audible feedback, and a dedicated ESP32 controller that could communicate directly with Home Assistant through ESPHome.
 
-I do get a small commision for these links but I personaly did purchase these for this project. 
+The result is **Another ESPHome Alarmo Keypad**.
 
-OPTIONALS:
+## Features
 
-Any wiring accessories you may want like a [breadboard](https://amzn.to/3VeKENz), [wire](https://amzn.to/4ACFvPq), [jumper wire kit](https://amzn.to/3VkdOea) ,  [project box(wood craft boxes are fun)](https://amzn.to/4dfnnBf), [connectors](https://amzn.to/4AGSwr6), [usb-c cords](https://amzn.to/4xXHJGL) and [powerbricks](https://amzn.to/3TgWXbA).
+- Physical 4×4 PIN keypad
+- Alarmo arm and disarm control
+- SSD1306 OLED status display
+- Audible buzzer feedback
+- ESP32-C3 based
+- ESPHome firmware
+- Native Home Assistant integration
+- Local network operation
+- Custom PCB
+- Custom 3D-printable wall enclosure
+- Configurable Home Assistant automations
 
-Tools:
+## Hardware
 
-[Soldering station](https://amzn.to/4hwRKEj), [solder flux](https://amzn.to/4hAHv27), [wire strippers](https://amzn.to/47r0Y0f)
-      
+### Main Components
 
-Wiring
+- **ESP32-C3 Super Mini** → [Amazon](https://amzn.to/4htXbUB)  
+  Larger pack → [Amazon](https://amzn.to/3T9Ncfi)
 
-   <img width="350" height="250" alt="WiringDiagram" src="https://github.com/user-attachments/assets/464e2e21-b95c-48a0-b6ee-26008b92c803" />
+- **4×4 Matrix Keypad** → [Amazon](https://amzn.to/4ACFlri)
 
-Programing
+- **SSD1306 128×64 OLED Display** → [Amazon – Yellow & Blue](https://amzn.to/4z5Livp)
 
-  The esphome builder code is in the firmware folder. Please have a look and read. You must copy the components of the code you want into your own esphome builder device. 
+- **Buzzer**  
+  Active → [Amazon](https://amzn.to/4xStWB8)  
+  Passive version used with the PCB → [Amazon](https://amzn.to/3TAuAVQ)
 
-  If you have a new C3 supermini it probably defaults to sleep and awake, over and over. You need to press and hold boot, then press reset and release, then release boot buttons. This method will allow the C3 supermini to program via usb.  
+### A Note About the Keypad
 
-  Check out the Automation Examples. The key entered example will be needed to pass the code to alarmo. My examples have device ID's removed. You will need to update with your device and entity id's. The gui will be the best way to do that. Just note that {trigger.event.data.code} is the way to utilize the entered code. 
+The Tegg 4×4 keypad linked above works, but the solder pads can be somewhat fragile if you're not careful while soldering.
 
-Usage
+This was one of the reasons I eventually designed the custom PCB. The PCB provides a much cleaner and more secure way to connect the keypad and eliminates much of the point-to-point wiring used in the original prototype.
 
-  The * key will delete a pin character entered. The C will clear the currently entered pin code. If you use the A key automation, pressing and holding the A key will arm the system. And finally if you enter your pin code and press D it still disarm Alarmo system. 
+Membrane-style 4×4 keypads should also work if you prefer that style.
 
-Project Example
+### OLED Display
 
-<img width="320" height="224" alt="IMG_3555" src="https://github.com/user-attachments/assets/e1f1ee0b-10a0-4f80-8b6c-57bc8143987d" />
+The project uses an **SSD1306 128×64 OLED**.
 
-<img width="291" height="320" alt="IMG_3556" src="https://github.com/user-attachments/assets/158d2382-7808-4d67-bcd2-235490e1511f" />
+You don't have to use the exact display linked above. Compatible SSD1306 displays are available in several colors, including white, blue, and yellow/blue combinations.
 
+> **Affiliate Disclosure:** Some of the Amazon links above are affiliate links. I may receive a small commission if you purchase through them at no additional cost to you. These are components and tools that I personally purchased or used while developing this project.
+
+## Optional Supplies
+
+If you're building the original wired version or experimenting with the project, you may also want:
+
+- [Breadboard](https://amzn.to/3VeKENz)
+- [Wire](https://amzn.to/4ACFvPq)
+- [Jumper Wire Kit](https://amzn.to/3VkdOea)
+- [Project Box / Wood Craft Boxes](https://amzn.to/4dfnnBf)
+- [Connectors](https://amzn.to/4AGSwr6)
+- [USB-C Cables](https://amzn.to/4xXHJGL)
+- [USB Power Adapters](https://amzn.to/3TgWXbA)
+
+## Tools
+
+A few basic electronics tools will make the build much easier:
+
+- [Soldering Station](https://amzn.to/4hwRKEj)
+- [Solder Flux](https://amzn.to/4hAHv27)
+- [Wire Strippers](https://amzn.to/47r0Y0f)
+
+## Wiring
+
+The project can still be assembled without the custom PCB using the original wiring configuration.
+
+<p align="center">
+  <img width="500" alt="ESPHome Alarmo Keypad Wiring Diagram" src="https://github.com/user-attachments/assets/464e2e21-b95c-48a0-b6ee-26008b92c803" />
+</p>
+
+If you're building a new keypad, I recommend using the custom PCB farther down this page. It significantly reduces the amount of wiring required.
+
+## ESPHome Firmware
+
+The ESPHome configuration for the keypad is located in the **Firmware** folder.
+
+Take some time to read through the configuration before using it. You'll need to copy or modify the appropriate components for your own ESPHome device and Home Assistant installation.
+
+### Programming the ESP32-C3 Super Mini
+
+Some new ESP32-C3 Super Mini boards may repeatedly enter a sleep/reset cycle and can be difficult to flash initially.
+
+If the board won't enter programming mode:
+
+1. Press and hold the **BOOT** button.
+2. While continuing to hold BOOT, press and release **RESET**.
+3. Release the **BOOT** button.
+4. Try flashing the ESP32-C3 again over USB.
+
+Once the initial firmware has been installed, ESPHome can normally handle subsequent updates.
+
+## Home Assistant & Alarmo
+
+Check out the **Automation Examples** included with the project.
+
+The **key entered** automation is particularly important because it passes the PIN entered on the physical keypad to Alarmo.
+
+My example automations have the device and entity IDs removed, so you'll need to select your own devices and entities in Home Assistant.
+
+Using the Home Assistant automation GUI is probably the easiest way to configure those values.
+
+The entered keypad code is available through:
+
+`trigger.event.data.code`
+
+That value can then be passed to Alarmo as part of your arm/disarm automation.
+
+## Keypad Controls
+
+The default configuration uses several of the keypad's function keys:
+
+| Key | Function |
+| --- | --- |
+| `*` | Delete the last PIN digit entered |
+| `C` | Clear the currently entered PIN |
+| `A` | Press and hold to arm the alarm when using the example automation |
+| `D` | Submit the entered PIN and disarm Alarmo |
+
+Because the keypad events are exposed through ESPHome and Home Assistant, these controls can be modified to fit your own alarm setup.
+
+## Original Prototype
+
+The first version of this project was built using point-to-point wiring and installed inside a simple project box.
+
+It wasn't particularly elegant, but it worked — and it proved the concept.
+
+<p align="center">
+  <img width="320" alt="Original Alarmo Keypad Prototype" src="https://github.com/user-attachments/assets/e1f1ee0b-10a0-4f80-8b6c-57bc8143987d" />
+  <img width="291" alt="Original Alarmo Keypad Electronics" src="https://github.com/user-attachments/assets/158d2382-7808-4d67-bcd2-235490e1511f" />
+</p>
+
+### Original Prototype Demo
 
 https://github.com/user-attachments/assets/e2140639-2b51-4e83-94c9-4a3a91e51b54
 
-Updated PCB & 3D Printed Case!
+The prototype worked well enough that I decided it was worth turning into something cleaner and easier to reproduce.
 
-The original version of this project was built using point-to-point wiring and a project box. It worked, but I wanted something cleaner, easier to assemble, and a little less janky.
+---
 
-So I designed a custom PCB and a 3D printable enclosure specifically for the Alarmo keypad.
+# Updated PCB & 3D Printed Case
 
-Custom PCB 
+The original keypad worked, but there was quite a bit of hand wiring inside the project box.
 
-The PCB brings the ESP32-C3 Super Mini, SSD1306 OLED display, 4x4 keypad, and buzzer together into a much cleaner package. It greatly reduces the amount of hand wiring required and makes the finished keypad easier to assemble and service.
+It was time to make it a little **less janky**.
 
-<p align="center">
-  <img width="45%" alt="PCB front" src="https://github.com/user-attachments/assets/a1162d3e-8dd0-4ddc-a72c-8e80d1786fd6" />
-  <img width="45%" alt="PCB back" src="https://github.com/user-attachments/assets/f778a3d6-73c8-4dc4-976d-43beef11bbca" />
-</p>
+So I designed a custom PCB and matching 3D-printable enclosure specifically for the Alarmo keypad.
 
+## Custom PCB
 
-The PCB files can be found in the PCB folder of this repository. or [availabe here](https://oshwlab.com/rockdown/another-esphome-alarmo-keypad)  
-3D Printed Case
+The custom PCB brings the **ESP32-C3 Super Mini, SSD1306 OLED display, 4×4 keypad, and buzzer** together into a much cleaner package.
 
-I also designed a case to hold the complete keypad assembly. The goal was to make something that could be mounted on the wall and look more like a finished alarm keypad instead of a collection of development boards and wires stuffed into a project box.
+It reduces the amount of point-to-point wiring required and makes the finished keypad easier to assemble, troubleshoot, and service.
 
 <p align="center">
-  <img width="45%" alt="3D printed case front" src="https://github.com/user-attachments/assets/ea5c2dcf-ef01-4767-9f10-308f13c043ae" />
-  <img width="45%" alt="3D printed case back" src="https://github.com/user-attachments/assets/9813a219-db86-4038-8ed1-7ca5638dacb2" />
+  <img width="45%" alt="Alarmo Keypad PCB Front" src="https://github.com/user-attachments/assets/a1162d3e-8dd0-4ddc-a72c-8e80d1786fd6" />
+  <img width="45%" alt="Alarmo Keypad PCB Back" src="https://github.com/user-attachments/assets/f778a3d6-73c8-4dc4-976d-43beef11bbca" />
 </p>
 
-The printable files can be found in the 3D Print folder of this repository.
+The PCB files are available in the **PCB** folder of this repository.
 
-Finished Keypad
+The PCB design is also available on [OSHWHub / OSHWLab](https://oshwlab.com/rockdown/another-esphome-alarmo-keypad).
 
-With the PCB and printed enclosure, the project is now much easier to reproduce and gives the Alarmo keypad a much more finished appearance.
+You can still build the keypad using the original wiring diagram, but the PCB is the recommended approach for a new build.
+
+## 3D Printed Enclosure
+
+I also designed a custom enclosure for the complete keypad assembly.
+
+The goal was to create something that could be mounted on the wall and look more like a finished alarm keypad rather than a collection of development boards and wires stuffed into a project box.
 
 <p align="center">
-  <img width="500" alt="Completed Alarmo Keypad" src="https://github.com/user-attachments/assets/b1be64ae-bc8f-450d-bf97-a4670e824924" />
+  <img width="45%" alt="Alarmo Keypad 3D Printed Case Front" src="https://github.com/user-attachments/assets/ea5c2dcf-ef01-4767-9f10-308f13c043ae" />
+  <img width="45%" alt="Alarmo Keypad 3D Printed Case Back" src="https://github.com/user-attachments/assets/9813a219-db86-4038-8ed1-7ca5638dacb2" />
 </p>
 
+The printable files are available in the **3D Print** folder of this repository.
+
+### Print Settings
+
+Recommended starting settings:
+
+- **Material:** PLA or PETG
+- **Layer Height:** 0.20 mm
+- **Supports:** TBD
+- **Infill:** TBD
+- **Wall Loops:** TBD
+
+I'll update the recommended settings as the enclosure continues to be refined and tested.
+
+## Finished Keypad
+
+Combining the custom PCB with the printed enclosure turns the original prototype into a much cleaner and more reproducible project.
+
+<p align="center">
+  <img width="500" alt="Completed ESPHome Alarmo Keypad" src="https://github.com/user-attachments/assets/b1be64ae-bc8f-450d-bf97-a4670e824924" />
+</p>
+
+It's still fundamentally the same simple idea I started with:
+
+**A dedicated physical keypad that does its job without trying to be everything else.**
+
+---
+
+## Project Status
+
+This project is actively being improved. Firmware changes, PCB revisions, enclosure updates, and additional Home Assistant automation examples may be added as I continue using and testing the keypad.
+
+If you build one, modify the design, or find a better way to do something, feel free to share your version.
+
+**Learn it. Build it. Put it into practice.**
 
 
 
