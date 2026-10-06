@@ -235,6 +235,32 @@ This project is actively being improved. Firmware changes, PCB revisions, enclos
 
 If you build one, modify the design, or find a better way to do something, feel free to share your version.
 
+## 🛒 Purchase Options
+
+Want to build the Alarmo Keypad without having to fabricate every part yourself? A few ready-made options are available.
+
+### 3D Printed Enclosure
+
+A ready-to-use 3D printed enclosure for the Alarmo Keypad.
+
+**[Purchase the 3D Printed Case](https://py.pl/7ZUzHRGNsK6)**
+
+### Bare PCB
+
+The custom Alarmo Keypad PCB with no components installed. This is a good option if you want to source and solder the electronic components yourself.
+
+**[Purchase the Bare PCB](https://py.pl/1d8C3f)**
+
+### Complete Alarmo Keypad Hardware
+
+The complete hardware package including the 3D printed enclosure, custom PCB, and components soldered to the board.
+
+**[Purchase the Complete Alarmo Keypad](https://py.pl/1fJqHh)**
+
+> **Note:** These purchase options are provided for convenience. This remains an open-source project, and the files and documentation in this repository can be used to build the project yourself.
+
+---
+
 ## 📜 License
 
 This project is open source, with licensing based on the type of material:
