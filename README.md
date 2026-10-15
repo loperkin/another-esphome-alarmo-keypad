@@ -40,8 +40,7 @@ The result is **Another ESPHome Alarmo Keypad**.
 
 ### Main Components
 
-- **ESP32-C3 Super Mini** → [Amazon](https://amzn.to/4htXbUB)  
-  Larger pack → [Amazon](https://amzn.to/3T9Ncfi)
+- [**ESP32-C3 Super Mini** →](https://geni.us/mZse)  
 
 - **4×4 Matrix Keypad** → [Amazon](https://amzn.to/4ACFlri)
 
