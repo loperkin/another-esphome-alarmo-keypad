@@ -70,7 +70,7 @@ You don't have to use the exact display linked above. Compatible SSD1306 display
 
 If you're building the original wired version or experimenting with the project, you may also want:
 
-- [Breadboard](https://amzn.to/3VeKENz)
+- [Breadboard](https://geni.us/UiAciwT) 
 - [Wire](https://amzn.to/4ACFvPq)
 - [Jumper Wire Kit](https://amzn.to/3VkdOea)
 - [Project Box / Wood Craft Boxes](https://amzn.to/4dfnnBf)
