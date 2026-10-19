@@ -74,7 +74,7 @@ If you're building the original wired version or experimenting with the project,
 - [Wire](https://geni.us/BJ17)
 - [Jumper Wire Kit](https://geni.us/qSjn)
 - [Project Box / Wood Craft Boxes](https://geni.us/XB2n1ET)
-- [Connectors](https://amzn.to/4AGSwr6)
+- [Connectors](https://geni.us/77p986)
 - [USB-C Cables](https://amzn.to/4xXHJGL)
 - [USB Power Adapters](https://amzn.to/3TgWXbA)
 
