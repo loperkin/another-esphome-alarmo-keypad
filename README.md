@@ -84,7 +84,7 @@ A few basic electronics tools will make the build much easier:
 
 - [Soldering Station](https://geni.us/le9ZvwC)
 - [Solder Flux](https://geni.us/ZWPR)
-- [Wire Strippers](https://amzn.to/47r0Y0f)
+- [Wire Strippers](https://geni.us/RIeto)
 
 ## Wiring
 
