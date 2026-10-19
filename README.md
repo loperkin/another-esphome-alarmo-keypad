@@ -44,7 +44,7 @@ The result is **Another ESPHome Alarmo Keypad**.
 
 - [**4×4 Matrix Keypad** →](https://geni.us/rCXY0aQ)
 
-- **SSD1306 128×64 OLED Display** → [Amazon – Yellow & Blue](https://amzn.to/4z5Livp)
+- [**SSD1306 128×64 OLED Display** →](https://geni.us/LMIEOmU)
 
 - **Buzzer**  
   Active → [Amazon](https://amzn.to/4xStWB8)  
