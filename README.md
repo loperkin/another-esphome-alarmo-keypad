@@ -47,7 +47,7 @@ The result is **Another ESPHome Alarmo Keypad**.
 - [**SSD1306 128×64 OLED Display** →](https://geni.us/LMIEOmU)
 
 - **Buzzer**  
-  Active → [Amazon](https://amzn.to/4xStWB8)  
+  [Active →](https://geni.us/1eZhR) 
   Passive version used with the PCB → [Amazon](https://amzn.to/3TAuAVQ)
 
 ### A Note About the Keypad
