@@ -42,7 +42,7 @@ The result is **Another ESPHome Alarmo Keypad**.
 
 - [**ESP32-C3 Super Mini** →](https://geni.us/mZse)  
 
-- **4×4 Matrix Keypad** → [Amazon](https://amzn.to/4ACFlri)
+- [**4×4 Matrix Keypad** →](https://geni.us/rCXY0aQ)
 
 - **SSD1306 128×64 OLED Display** → [Amazon – Yellow & Blue](https://amzn.to/4z5Livp)
 
