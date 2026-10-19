@@ -76,7 +76,7 @@ If you're building the original wired version or experimenting with the project,
 - [Project Box / Wood Craft Boxes](https://geni.us/XB2n1ET)
 - [Connectors](https://geni.us/77p986)
 - [USB-C Cables](https://geni.us/0TGqa0E)
-- [USB Power Adapters](https://amzn.to/3TgWXbA)
+- [USB Power Adapters](https://geni.us/kpsq)
 
 ## Tools
 
