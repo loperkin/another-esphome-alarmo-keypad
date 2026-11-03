@@ -167,7 +167,7 @@ The prototype worked well enough that I decided it was worth turning into someth
 
 # Updated PCB & 3D Printed Case
 
-[YouTube](https://youtu.be/0HRc5kkIyL4?si=EhKR_PDsF6QYTV8Q)
+[YouTube Full Demo Video](https://youtu.be/0HRc5kkIyL4?si=EhKR_PDsF6QYTV8Q)
 
 The original keypad worked, but there was quite a bit of hand wiring inside the project box.
 
